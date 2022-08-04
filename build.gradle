@@ -1,0 +1,19 @@
+apply plugin: 'java'
+apply plugin: 'idea'
+group 'io.github.rholder'
+version '3.0.1'
+
+artifacts {
+    archives jar
+}
+
+repositories {
+    mavenLocal()
+    'maven(http://maven.aliyun.com/nexus/content/groups/public/)'
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'com.google.guava:guava:31.1-jre'
+    testImplementation 'junit:junit:4.12'
+}
